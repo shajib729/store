@@ -1,0 +1,106 @@
+.skeleton-wrapper{
+    width: 100%;
+    position: relative;
+}
+.skeleton{
+    margin: 10px 0;
+    border-radius: 4px;
+    overflow: hidden !important;
+}
+.skeleton .thumbnail{
+    width: 100%;
+    min-height: 200px;
+    background-color: #D2DBE2;
+    border-radius: 7px;
+    overflow: hidden !important;
+    position: relative;
+}
+.skeleton .text-lg{
+    width: 100%;
+    /* margin-top: 10px; */
+    background-color: #D2DBE2;
+    border-radius: 4px;
+    min-height: 10px;
+    overflow: hidden !important;
+    position: relative;
+}
+.skeleton .text-md{
+    width: 50%;
+    /* margin-top: 10px; */
+    background-color: #D2DBE2;
+    border-radius: 4px;
+    min-height: 10px;
+    overflow: hidden !important;
+    position: relative;
+}
+.skeleton .text-sm{
+    width: 30%;
+    /* margin-top: 10px; */
+    background-color: #D2DBE2;
+    border-radius: 4px;
+    min-height: 20px;
+    overflow: hidden !important;
+    position: relative;
+}
+.thumbnail::after,.text-lg::after,.text-md::after,.text-sm::after,.product-img::after,.product-title::after,.product-price::after,.product-description::after,.product-addBtn::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right,#65687121 0%,#ffffff06,#65687121 40%,#65687121 100%);
+    animation: loader 1s infinite linear ;
+}
+@keyframes loader {
+    0%{
+        background-position: -450px 0;
+    }
+    100%{
+        background-position: 450px 0;
+    }
+}
+
+.product_section .skeleton .product-img{
+    width: 100%;
+    min-height: 400px;
+    background-color: #D2DBE2;
+    border-radius: 7px;
+    overflow: hidden !important;
+    position: relative;
+}
+.product_section .skeleton .product-title{
+    width: 80%;
+    min-height: 50px;
+    background-color: #D2DBE2;
+    border-radius: 7px;
+    overflow: hidden !important;
+    position: relative;
+}
+.product_section .skeleton .product-description{
+    width: 100%;
+    min-height: 100px;
+    background-color: #D2DBE2;
+    border-radius: 7px;
+    overflow: hidden !important;
+    position: relative;
+}
+.product_section .skeleton .product-price{
+    width: 50%;
+    min-height: 50px;
+    background-color: #D2DBE2;
+    border-radius: 7px;
+    overflow: hidden !important;
+    position: relative;
+}
+.product_section .skeleton .product-addBtn{
+    width: 40%;
+    min-height: 50px;
+    background-color: #D2DBE2;
+    border-radius: 7px;
+    overflow: hidden !important;
+    position: relative;
+}
+.home .skeleton-wrapper .col-6{
+    display: none;
+}

@@ -1,0 +1,45 @@
+.navbar{
+    background: #2e3a4c;
+    position: fixed;
+    z-index: 999999999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar nav{
+    
+}
+.logo{
+    cursor: pointer;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white !important;
+}
+.navbar ul{
+    list-style: none;
+    margin: 0;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 17px;
+}
+.navbar ul .add_to_cart{
+    font-size: 1.6rem;
+    line-height: 0;
+    position: relative;
+}
+.navbar ul a p{
+    font-size: 15px;
+    background: mediumorchid;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
