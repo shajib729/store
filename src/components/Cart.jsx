@@ -33,7 +33,7 @@ const Cart = () => {
                                                 <p>{product.title}</p>
                                             </div>
                                             <div className="col-2 product_price">
-                                                <p>{product.price*product.qty}</p>
+                                                <p>{(product.price*product.qty).toFixed(2)}</p>
                                             </div>
                                             <div className="col-3 product_qty">
                                                 <p className="inc" onClick={()=>dispatch({type:"INC",product:product})}>+</p>
